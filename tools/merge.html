@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <h1>PDF Toolbox</h1>
+    <h2>Merge</h2>
+    <div>
+      Mode: <br/>
+      <input type="radio" id="append" name="mode" value="append" checked="checked" onchange="modeChange();">Append<br>
+      <input type="radio" id="alternate" name="mode" value="alternate" onchange="modeChange();">Alternate<br>  
+    </div>
+    <div id="rows">
+      <div>
+        File 1: <input type="file" id="input1" name="input1" /> 
+        <span class="offset"  style="display: none;">Offset: <input type="number" id="offset1" name="offset1" value="0" /></span>
+      </div>
+      <div>
+        File 2: <input type="file" id="input2" name="input2" /> 
+        <span class="offset" style="display: none;">Offset: <input type="number" id="offset2" name="offset2" value="0" /></span>
+      </div>
+    </div>
+    <input type="button" onclick="addInput()" value="Add Row"><br/>
+    <input type="button" onclick="merge()" value="Merge">
+    <br/>
+  </body>
+
+  <script src="https://unpkg.com/pdf-lib"></script>
+  <script src="../src/utils.js"></script>
+  <script src="merge.js"></script>
+</html>
