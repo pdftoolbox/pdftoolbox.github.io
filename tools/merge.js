@@ -105,7 +105,7 @@ async function merge() {
             done = true;
             break;
           }
-          pdfDoc.addPage(input["dim"]);
+          //pdfDoc.addPage(input["dim"]);
         }
       }
       if (done) {

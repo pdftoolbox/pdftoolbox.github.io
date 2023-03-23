@@ -1,2 +1,2 @@
 # PDF Toolbox
-Client-side tools for editing PDF files
+Free client-side tools for editing PDF files
