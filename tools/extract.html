@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <h1>PDF Toolbox</h1>
+    <h2>Extract</h2>
+    <div id="rows">
+      <div>
+        Document: <input type="file" id="input1" name="input1" /> 
+      </div>
+      <div>
+        Range: <input type="number" id="range1" name="range1" value="0" /> - <input type="number" id="range2" name="range2" value="0" />
+      </div>
+    </div>
+    <input type="button" onclick="extract()" value="Extract">
+    <br/>
+  </body>
+
+  <script src="https://unpkg.com/pdf-lib@1.4.0/dist/pdf-lib.min.js"></script>
+  <script src="../src/utils.js"></script>
+  <script src="extract.js"></script>
+</html>
